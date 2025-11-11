@@ -1,0 +1,148 @@
+/*----------------------------------------*/
+/*  02. Hero Banner CSS
+/*----------------------------------------*/
+.sell-info-left {
+    @media #{$tablet-device,$desktop-device,$small-mobile,$large-mobile} {
+        margin-top: 50px;
+    }
+}
+
+.sell-info-right {
+    margin-top: 0px;
+}
+.sell-info-left {
+    border: 3px solid #e6e6e6;
+    border-radius: 35px;
+    margin-top: 20px;
+}
+.sell-contact-area {
+    background: #2c3134;
+
+    & .sell-contact-left-wrap {
+        & .sell-contact-left-title {
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: #fff;
+            @media #{$large-mobile} {
+                font-size: 25px;
+                line-height: 35px;
+            }
+        }
+        & .sell-contact-des {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 32px;
+            color: #fff;
+            @media #{$large-mobile} {
+                font-size: 16px;
+                line-height: 32px;
+            }
+        }
+    }
+
+    & .sell-contact-right-wrap {
+        margin-left: 40px;
+        @media #{$tablet-device,$large-mobile} {
+            margin-top: 30px;
+            margin-left: 0px;
+        }
+        & .sell-contact-form {
+
+            & .input-box {
+                margin-bottom: 10px;
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+                & label {
+                    font-size: 16px ;
+                    color: #fff;
+                    font-weight: 500;
+                    line-height: 32px;
+                }
+    
+                & .input-field {
+                    width: 100%;
+                    height: 50px;
+                    padding: 0px 15px;
+                    border: 1px solid #fff;
+                }
+            }
+            & .message-box {
+                margin-bottom: 10px;
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+                & label {
+                    font-size: 16px ;
+                    color: #fff;
+                    font-weight: 500;
+                    line-height: 32px;
+                }
+    
+                & .message-box {
+                    width: 100%;
+                    height: 100px;
+                    padding: 0px 15px;
+                    border: 1px solid #fff;
+                }
+            }
+
+            & .sell-contact-submit-btn {
+                margin-top: 20px;
+
+                & .contact-sub-btn {
+                    color: #fff;
+                    &:hover {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.sell-details-area {
+    & .sell-details-title {
+        font-size: 25px;
+        line-height: 35px;
+        font-weight: 700;
+        color: #1D3638;
+        @media #{$large-mobile} {
+            text-align: center;
+        }
+    }
+
+    & .sell-details-list {
+        margin-top: 40px;
+        & .sell-details-list-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+            &:last-child{
+                margin-bottom: 0px;
+            }
+            & .sell-details-icon {
+                width: 60px;
+                height: 60px;
+            }
+
+            & .sell-details-list-content {
+                & h4 {
+                    font-size: 20px;
+                    color: #1D3638;
+                    line-height: 32px;
+                    margin-bottom: 5px;
+                }
+                & p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #586061;
+                }
+            }
+        }
+    }
+}

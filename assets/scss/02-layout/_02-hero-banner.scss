@@ -1,0 +1,143 @@
+/*----------------------------------------*/
+/*  02. Hero Banner CSS
+/*----------------------------------------*/
+.hero-area {
+    padding-top: 0px;
+}
+.hero-slide {
+    padding: 240px 0px;
+        position: relative;
+    @media #{$laptop-device} {
+        padding: 210px 0px;
+    }
+    @media #{$desktop-device} {
+        padding: 210px 0px;
+    }
+    @media #{$tablet-device} {
+        padding: 210px 0px;
+    }
+    @media #{$small-mobile} {
+        padding: 180px 0px;
+    }
+     
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 1;
+    }
+
+    & .hero-content {
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        & .hero-title {
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 72px;
+            color: #fff;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            @media #{$tablet-device} {
+                font-size: 40px;
+                line-height: 54px;
+            }
+            @media #{$large-mobile} {
+                font-size: 35px;
+                line-height: 47px;
+            }
+            @media #{$small-mobile} {
+                font-size: 30px;
+                line-height: 42px;
+            }
+            @media #{$extra-small-mobile} {
+                font-size: 20px;
+                line-height: 32px;
+  
+            }
+        }
+
+        & .hero-description {
+            font-size: 20px;
+            color: #fff;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            @media #{$extra-small-mobile} {
+                font-size: 18px;
+                line-height: 30px;
+            }
+        }
+        & .hero-description-2 {
+            font-size: 20px;
+            color: #202020;
+            background: #fff;
+            font-weight: 600;
+            padding: 5px 15px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            @media #{$small-mobile} {
+                font-size: 18px;
+                line-height: 30px;
+            }
+            @media #{$extra-small-mobile} {
+                font-size: 10px;
+                line-height: 22px;
+            }
+        }
+    }
+}
+.hero-title {
+    transform: translateY(30px);
+    opacity: 0;
+}
+.hero-description {
+    transform: translateY(40px);
+    opacity: 0;
+}
+.hero-description-2 {
+    transform: translateY(50px);
+    opacity: 0;
+}
+.hero-brand-img {
+    transform: translateY(55px);
+    opacity: 0;
+}
+.hero-btn {
+    transform: translateY(60px);
+    opacity: 0;
+}
+.swiper-slide-active .hero-title {
+    transform: translateY(0px);
+    opacity: 1;
+    transition: all 0.6s ease 0.3s;
+    transition-delay: 0.8s;
+}
+.swiper-slide-active .hero-description {
+    transform: translateY(0px);
+    opacity: 1;
+    transition: all 0.6s ease 0.3s;
+    transition-delay: 1s;
+}
+.swiper-slide-active .hero-description-2 {
+    transform: translateY(0px);
+    opacity: 1;
+    transition: all 0.6s ease 0.3s;
+    transition-delay: 1.2s;
+}
+.swiper-slide-active .hero-brand-img {
+    transform: translateY(0px);
+    opacity: 1;
+    transition: all 0.6s ease 0.3s;
+    transition-delay: 1.2s;
+}
+.swiper-slide-active .hero-btn{
+    transform: translateY(0px);
+    opacity: 1;
+    transition: all 0.6s ease 0.3s;
+    transition-delay: 1.4s;
+}

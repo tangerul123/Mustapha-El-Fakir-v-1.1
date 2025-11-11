@@ -1,0 +1,201 @@
+/*----------------------------------------*/
+/*  02. Classes CSS
+/*----------------------------------------*/
+
+.tp-btn {
+    text-align: center;
+    height: 50px;
+    background: #d4003a;
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    line-height: 52px;
+    padding: 0px 36px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.3s;
+    border-radius: 25px;
+    letter-spacing: 1px;
+    &:hover {
+        background: #212121;
+    }
+}
+.form-btn {
+    text-align: center;
+    height: 50px;
+    background: #d4003a;
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    line-height: 52px;
+    padding: 0px 60px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.3s;
+    border-radius: 25px;
+    letter-spacing: 1px;
+    border: none;
+    &:hover {
+        background: #212121;
+    }
+}
+.tp-btn-white {
+    text-align: center;
+    height: 50px;
+    background: #fff;
+    display: inline-block;
+    font-size: 14px;
+    color: #212121;
+    line-height: 52px;
+    padding: 0px 36px;
+    text-transform: capitalize;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: 0.3s;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.06);
+    @media #{$large-mobile} {
+        margin-left: 0px;
+    }
+    &:hover {
+        background: #f4da58;
+        color: #000;
+    }
+}
+
+.yellow-btn {
+    text-align: center;
+    height: 50px;
+    
+    background: #000;
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    line-height: 52px;
+    padding: 0px 36px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 0px;
+    transition: 0.3s;
+    border-radius: 10px;
+    &:hover {
+        background: #fff;
+        color: #000;
+    }
+}
+.trans-btn {
+    text-align: center;
+    height: 50px;
+    
+    background: transparent;
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    line-height: 52px;
+    padding: 0px 36px;
+    font-weight: 600;
+    margin-left: 0px;
+    transition: 0.3s;
+    border: 1px solid;
+    text-transform: uppercase;
+    &:hover {
+        background: #fff;
+        color: #000;
+    }
+}
+
+// Section Title
+.section-title {
+    &--sub-title {
+        font-size: 30px;
+        text-transform: capitalize;
+        color: #102641;
+        font-weight: 400;
+    }
+
+    &--title {
+        font-size: 70px;
+        color: #102641;
+        font-weight: 700;
+        text-transform: capitalize;
+
+        @media #{$desktop-device} {
+            font-size: 45px;
+        }
+        @media #{$large-mobile} {
+            font-size: 35px;
+        }
+        @media #{$tablet-device} {
+            font-size: 35px;
+        }
+        @media #{$extra-small-mobile} {
+            font-size: 30px;
+        }
+    }
+}
+// back to top 
+#button {
+  display: inline-block;
+  background-color: #ff5a3c;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.1);
+  visibility: hidden;
+  z-index: 1000;
+  &:hover {
+    background: #102641;
+  }
+    @media #{$extra-small-mobile} {
+        width: 30px;
+        height: 30px;
+
+    }
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+    @media #{$extra-small-mobile} {
+        line-height: 30px;
+        font-size: 16px;
+    }
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+// section padding 
+
+.section-padding {
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    // Responsive
+    @media #{$desktop-device} {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    @media #{$laptop-device} {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    @media #{$tablet-device} {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    @media #{$large-mobile} {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}

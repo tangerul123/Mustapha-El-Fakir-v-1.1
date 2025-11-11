@@ -1,0 +1,244 @@
+/*----------------------------------------*/
+/*  03. Services CSS
+/*----------------------------------------*/
+
+.feature-area {
+    background: #F5F5F0;
+    .feature-title {
+        margin-bottom: 50px;
+        &--title {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 52px;
+            text-transform: uppercase;
+            color: #212121;
+            text-align: center;
+            @media #{$large-mobile} {
+                font-size: 36px;
+                line-height: 48px;
+            }
+            @media #{$small-mobile} {
+                font-size: 30px;
+                line-height: 40px;
+            }
+            @media #{$extra-small-mobile} {
+                font-size: 28px;
+                line-height: 40px;
+            }
+        }
+    }
+}
+
+.feature-item {
+    box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.06);
+    padding: 20px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    & .feature-thumb {
+        margin-bottom: 25px;
+        text-align: center;
+        overflow: hidden;
+        border-radius: 10px;
+        & img {
+            max-width: 100%;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                
+                transform: scale(1.1);
+            }
+        }
+    }
+    & .feature-content {
+        &--title {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 30px;
+            color: #212121;
+            margin-bottom: 15px;
+            transition: 0.3s;
+
+            &:hover {
+                color: #ff5a3c;
+            }
+        }
+        &--des {
+            font-size: 14px;
+            line-height: 26px;
+            color: #555;
+        }
+        &--location {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+        &--price {
+            font-size: 18px;
+            font-weight: 700;
+            color: #102641;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+// feature-card main section
+
+.Propertie-area {
+    
+    & .Properties-title {
+        font-size: 40px;
+        line-height: 50px;
+        color: #102641;
+        padding-bottom: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        @media #{$tablet-device} {
+            font-size: 35px;
+            line-height: 45px;
+        }
+        @media #{$large-mobile} {
+            font-size: 25px;
+            line-height: 35px;
+        }
+    }
+}
+.featured-hotel-card {
+    margin-bottom: 15px;
+    & .list {
+        padding: 20px;
+        box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.06);
+
+        & .list-thumb {
+            overflow: hidden;
+            & img {
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        & .list-content {
+            padding: 10px;
+
+            & .list-title {
+                font-size: 20px;
+                line-height: 30px;
+                transition: 0.3s;
+                &:hover{
+                    color: #ff5a3c;
+                }
+            }
+
+            & .list-hotel-featured {
+
+                & .price-list {
+                    margin-top: 10px;
+                    & span {
+                        font-size: 18px;
+                        color: #102641;
+                    }
+                }
+
+                & .list-hotel-featured-list {
+                    margin-top: 15px;
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                }
+
+                & .list-location {
+                    margin-top: 15px;
+                    font-size: 13px;
+                    line-height: 23px;
+                    color: #212121;
+                }
+            }
+        }
+    }
+}
+
+// Properties details css
+
+.Properties-Details-thumb {
+    padding: 70px 100px 50px 70px;
+    @media #{$tablet-device,$large-mobile,$laptop-device,$desktop-device} {
+        padding: 50px 0px;
+    }
+
+    & .Properties-thumb {
+        
+        & img {
+            border-radius: 10px;
+        }
+    }
+}
+
+.Properties-Details-content {
+    padding-bottom: 70px;
+
+    & .Properties-Details-title {
+        font-size: 40px;
+        line-height: 52px;
+    }
+
+    & .Properties-Details-price {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    & .Properties-Details {
+        padding: 20px 0px;
+        & .list-hotel-featured-list {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+    }
+
+    & .Properties-Details-des {
+        margin-top: 30px;
+        & .title {
+            font-size: 35px;
+            line-height: 45px;
+            text-transform: capitalize;
+            @media #{$large-mobile,} {
+                font-size: 25px;
+                line-height: 37px;
+            }
+        }
+
+        & .des {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #212121;
+            line-height: 30px;
+        }
+        & .des-2 {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #212121;
+            line-height: 32px;
+        }
+    }
+
+    & .Properties-Details-location {
+        margin-top: 20px;
+        p {
+            font-size: 18px;
+            line-height: 28px;
+            color: #555;
+        }
+
+        & i {
+            margin-right: 5px;
+        }
+    }
+}
+.swiper-button-next.Properties-btn-next {
+	background: #fff;
+	padding: 27px;
+}
+.swiper-button-prev.Properties-prev {
+    background: #fff;
+	padding: 27px;
+}

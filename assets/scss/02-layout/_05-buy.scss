@@ -1,0 +1,143 @@
+/*----------------------------------------*/
+/*   05. buy  CSS
+/*----------------------------------------*/
+
+.buy-info-area {
+    background: #F5F5F0;
+}
+
+.buy-info-wrap-right {
+    margin-top: 80px;
+    
+    @media #{$large-mobile} {
+        padding-left: 10px ;
+    }
+    & .buy-info-right-title {
+        text-transform: capitalize;
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 48px;
+        color: #1D3638;
+        @media #{$laptop-device} {
+            font-size: 34px;
+            line-height: 40px;
+        }
+        @media #{$large-mobile} {
+            font-size: 30px;
+            line-height: 40px;
+        }
+        @media #{$small-mobile} {
+            font-size: 25px;
+            line-height: 37px;
+        }
+    }
+
+    & .buy-info-list {
+
+        & .buy-info-list-box {
+            margin-top: 30px;
+            & li {
+                list-style-type: disc;
+                font-size: 18px;
+                color: #1D3638;
+                font-weight: 500;
+                margin-bottom: 15px;
+                @media #{$small-mobile} {
+                    font-size: 16px;
+                    line-height: 32px;
+                }
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
+.buy-img-box {
+    margin-top: 10px;
+    text-align: center;
+    & img {
+        border-radius: 15px;
+        border: 1px solid #e6e6e6;
+    }
+}
+.buy-contact-area {
+    background: #2c3134;
+
+    & .buy-contact-left-wrap {
+
+        & .buy-contact-des {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 32px;
+            color: #fff;
+            @media #{$tablet-device,$large-mobile} {
+                font-size: 16px;
+                line-height: 34px;
+            }
+        }
+    }
+
+    & .buy-contact-right-wrap {
+        margin-left: 40px;
+        @media #{$large-mobile} {
+            margin-top: 30px;
+        }
+        @media #{$small-mobile} {
+            margin-left: 0px;
+        }
+        & .buy-contact-form {
+
+            & .input-box {
+                margin-bottom: 10px;
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+                & label {
+                    font-size: 16px ;
+                    color: #fff;
+                    font-weight: 500;
+                    line-height: 32px;
+                }
+    
+                & .input-field {
+                    width: 100%;
+                    height: 50px;
+                    padding: 0px 15px;
+                    border: 1px solid #fff;
+                }
+            }
+            & .message-box {
+                margin-bottom: 10px;
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+                & label {
+                    font-size: 16px ;
+                    color: #fff;
+                    font-weight: 500;
+                    line-height: 32px;
+                }
+    
+                & .message-box {
+                    width: 100%;
+                    height: 100px;
+                    padding: 0px 15px;
+                    border: 1px solid #fff;
+                }
+            }
+
+            & .buy-contact-submit-btn {
+                margin-top: 20px;
+
+                & .contact-sub-btn {
+                    color: #fff;
+
+                    &:hover {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+/*----------------------------------------*/
+/*   04. About  CSS
+/*----------------------------------------*/
+.about-us-area {
+    background: #F3F6FD;
+}
+
+.about-left-wrap {
+
+    & .about-thumb {
+        border: 5px solid #1D3638;
+        margin-right: 40px;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+}
+.about-right-wrap {
+
+    & .about-content {
+        margin-top: 20px;
+        & .about-title {
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 46px;
+            text-transform: uppercase;
+            @media #{$tablet-device} {
+                font-size: 40px;
+                line-height: 52px;
+            }
+            @media #{$large-mobile} {
+                font-size: 40px;
+                line-height: 52px;
+            }
+            @media #{$small-mobile} {
+                font-size: 35px;
+                line-height: 45px;
+            }
+            @media #{$extra-small-mobile} {
+                font-size: 27px;
+                line-height: 42px;
+            }
+        }
+
+        & .about-des {
+            margin-top: 10px;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 27px;
+        }
+    }
+
+    & .about-list {
+        margin-top: 40px;
+        & .list-box {
+            
+            & .list-items {
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+                & img {
+                    width: 50px;
+                    height: 50px;
+                }
+                & p {
+                    display: inline-block;
+                    color: #1D3638;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 30px;
+                    margin-left: 10px;
+                    @media #{$laptop-device} {
+                        font-size: 16px;
+                        line-height: 28px;
+                    }
+                    @media #{$extra-small-mobile} {
+                        font-size: 14px;
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+    }
+}

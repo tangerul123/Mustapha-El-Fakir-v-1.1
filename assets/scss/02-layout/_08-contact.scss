@@ -1,0 +1,101 @@
+/*----------------------------------------*/
+/*   08. contact CSS
+/*----------------------------------------*/
+.contact-area {
+    background: #2c3134;
+}
+.contact-wrap {
+ 
+    & .contact {
+
+        & .owner-name-details {
+            & h2 {
+                font-size: 20px;
+                line-height: 30px;
+                color: #fff;
+            }
+        }
+
+        & .contact-form {
+
+            & .contact-form-des {
+
+                & p {
+                    font-size: 20px;
+                    color: #fff;
+                    line-height: 32px;
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                }
+            }
+
+            & .sell-contact-right-wrap {
+                & .sell-contact-form {
+
+                    & .input-box {
+                        margin-bottom: 10px;
+                        &:last-child{
+                            margin-bottom: 0px;
+                        }
+                        & label {
+                            font-size: 16px ;
+                            color: #fff;
+                            font-weight: 500;
+                            line-height: 32px;
+                        }
+            
+                        & .input-field {
+                            width: 100%;
+                            height: 50px;
+                            padding: 0px 15px;
+                            border: 1px solid #fff;
+                        }
+                    }
+                    & .message-box {
+                        margin-bottom: 10px;
+                        &:last-child{
+                            margin-bottom: 0px;
+                        }
+                        & label {
+                            font-size: 16px ;
+                            color: #fff;
+                            font-weight: 500;
+                            line-height: 32px;
+                        }
+            
+                        & .message-box {
+                            width: 100%;
+                            height: 100px;
+                            padding: 0px 15px;
+                            border: 1px solid #1D3638;
+                        }
+                    }
+
+                    & .sell-contact-submit-btn {
+                        margin-top: 20px;
+
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    & .google-map {
+        margin-left: 20px;
+        @media #{$large-mobile,$tablet-device} {
+            margin-top: 30px;
+        }
+        @media #{$small-mobile} {
+            margin-top: 30px;
+            margin-left: 0px;
+        }
+        & iframe {
+            width: 100%;
+            border-radius: 20px;
+            @media #{$small-mobile} {
+                height: 400px;
+            }
+        }
+    }
+}

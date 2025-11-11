@@ -1,0 +1,67 @@
+/*----------------------------------------*/
+/*  breadcrumb CSS
+/*----------------------------------------*/
+
+.breadcrumb-area {
+    padding: 200px 0;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+}
+
+.breadcrumb-wrapper {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.breadcrumb-title {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 10px;
+    @media #{$large-mobile} {
+        font-size: 30px;
+    }
+}
+
+.breadcrumb-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.breadcrumb-list li {
+    display: inline;
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+.breadcrumb-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+    &:hover {
+        color: #f39c12;
+    }
+}
+
+.breadcrumb-list li span {
+    color: #f39c12;
+}
+.breadcrumb-list .home-link::after {
+    content: '>';
+    margin-left: 5px;
+    color: #fff;
+}
